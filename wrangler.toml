@@ -1,0 +1,15 @@
+name = "bubblez-auth-dev"
+main = "src/index.ts"
+compatibility_date = "2023-01-09"
+
+# dev
+usage_model = "unbound"
+account_id = "ea44a4b629a4cdf0c14ca78dcda01450"
+route = { pattern = "auth-dev.bubblez.app/*", zone_id = "64ababc6e2fd14727d910b640466bb2f" }
+
+[dev]
+port = 9803
+
+[env.production]
+name = "bubblez-auth-prod"
+route = { pattern = "auth.bubblez.app/*", zone_name = "bubblez.app" }
